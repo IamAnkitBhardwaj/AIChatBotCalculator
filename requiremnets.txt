@@ -1,2 +1,4 @@
-python
-flask
+Flask
+requests
+numpy
+pandas
