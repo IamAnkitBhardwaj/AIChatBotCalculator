@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chatbot Calculator - About</title>
+  <link rel="stylesheet" href="/frontend/style.css">
+</head>
+<body>
+  <header>
+    <div class="boxx">
+      <div><img src="/frontend/images/chatbot.jpeg" alt="Chatbot Calculator" /></div>
+      <div class="title"><h1>AI Chatbot Calculator</h1></div>
+      <!-- Hamburger Menu Icon -->
+      <div class="hamburger" onclick="toggleMenu()">
+        <i class="fas fa-bars"></i>
+      </div>
+      <!-- Navigation Links -->
+      <div class="link" id="navLinks">
+        <a href="/index.html" class="active">Home</a>
+        <a href="/components/about.html">About</a>
+        <a href="/components/contact.html">Contact</a>
+      </div>
+    </div>
+    <div class="header-container">
+      <div class="header-content">
+        <p>Welcome! I'm an AI Chatbot, here to guide you on using this calculator effectively.</p>
+      </div>
+    </div>
+    <!-- Instruction Chat -->
+    <div class="instruction-chat">
+      <div id="instruction-chatbox">
+        <div class="chatbot-message">
+          <p>Hi there! Ask me how to use the calculator. For example, "How to add numbers?"</p>
+        </div>
+      </div>
+      <div class="input-container">
+        <input type="text" id="instructionInput" placeholder="Type your question here" />
+        <button onclick="sendInstructionMessage()">Ask</button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section>
+      <h2>About Chatbot Calculator</h2>
+      <p>The Chatbot Calculator is designed to simplify mathematical problems for users. It can handle:</p>
+      <ul>
+        <li>Basic arithmetic: addition, subtraction, multiplication, and division.</li>
+        <li>Trigonometric functions: sin, cos, tan.</li>
+        <li>Exponential operations: powers and roots.</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Chatbot Calculator. All rights reserved.</p>
+  </footer>
+  <script src="/frontend/script.js"></script>
+ 
+</body>
+</html>
