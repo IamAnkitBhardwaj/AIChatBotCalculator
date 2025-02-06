@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chatbot Calculator</title>
+  <link rel="stylesheet" href="/frontend/style.css">
+  <!-- Add Font Awesome for Hamburger Icon -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <div class="boxx">
+      <div><img src="/frontend/images/chatbot.jpeg" alt="Chatbot Calculator" /></div>
+      <div class="title"><h1>AI Chatbot Calculator</h1></div>
+      <!-- Hamburger Menu Icon -->
+      <div class="hamburger" onclick="toggleMenu()">
+        <i class="fas fa-bars"></i>
+      </div>
+      <!-- Navigation Links -->
+      <div class="link" id="navLinks">
+        <a href="index.html" class="active">Home</a>
+        <a href="/components/about.html">About</a>
+        <a href="/components/contact.html">Contact</a>
+      </div>
+    </div>
+    <div class="header-container">
+      <div class="header-content">
+        <p>Welcome! I'm an AI Chatbot, here to guide you on using this calculator effectively.</p>
+      </div>
+    </div>
+    <!-- Instruction Chat -->
+    <div class="instruction-chat">
+      <div id="instruction-chatbox">
+        <div class="chatbot-message">
+          <p>Hi there! Ask me how to use the calculator. For example, "How to add numbers?"</p>
+        </div>
+      </div>
+      <div class="input-container">
+        <input type="text" id="instructionInput" placeholder="Type your question here" />
+        <button onclick="sendInstructionMessage()">Ask</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+   <center><h2 style="color: rgb(69, 55, 55);">Chatbot Calculator</h2></center>
+  <main>
+    <div class="chat-container">
+      <div id="chatbox">
+        <div class="chatbot-message">
+          <p>Welcome! I'm your Chatbot Calculator. Try operations like: add, subtract, multiply, divide, power, sin, cos, tan.</p>
+        </div>
+      </div>
+      <div class="input-container">
+        <input type="text" id="userInput" placeholder="Type your question here (e.g., sin 45)" />
+        <button onclick="sendMessage()">Send</button>
+      </div>
+    </div>
+
+    <!-- Suggestions -->
+    <div class="suggestions">
+      <h2>Supported Operations</h2>
+      <div class="operations">
+        <button onclick="fillInput('add 5 10')">Add (+)</button>
+        <button onclick="fillInput('subtract 15 5')">Subtract (-)</button>
+        <button onclick="fillInput('multiply 3 7')">Multiply (*)</button>
+        <button onclick="fillInput('divide 20 4')">Divide (/)</button>
+        <button onclick="fillInput('power 2 3')">Power (^)</button>
+        <button onclick="fillInput('sin 45')">Sin</button>
+        <button onclick="fillInput('cos 60')">Cos</button>
+        <button onclick="fillInput('tan 30')">Tan</button>
+      </div>
+    </div>
+  </main>
+
+  <!-- Currency Converter Chatbot Section -->
+  <section id="currency-converter">
+    <h2>Currency Converter Chatbot</h2>
+    <div class="chat-container">
+      <div id="currency-chatbox">
+        <div class="chatbot-message">
+          <p>Welcome to the Currency Converter! Try commands like "10 USD to INR".</p>
+        </div>
+      </div>
+      <div class="input-container">
+        <input type="text" id="currencyInput" placeholder="Enter amount and currencies (e.g., 10 USD to INR)" />
+        <button onclick="sendCurrencyMessage()">Convert</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Chatbot Calculator. All Rights Reserved.</p>
+  </footer>
+
+  <script src="/frontend/script.js"></script>
+ 
+</body>
+</html>
